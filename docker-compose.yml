@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  site-estatico:
+    image: meu-site-nginx 
+    ports:
+      - "8080:80"
+
+  app-simples:
+    image: traefik/whoami 
+    ports:
+      - "8081:80"
