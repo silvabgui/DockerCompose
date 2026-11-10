@@ -22,20 +22,24 @@ Para correr este projeto na sua máquina, precisa de ter instalado:
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) (com a engine a correr em background).
 * Git (para clonar o repositório).
 
-## 🚀 Passo a Passo de Execução
+## 💻 Passo a Passo de Execução
 
 1. Buildar a imagem customizada:
 No terminal, na pasta do projeto, execute:
    ```bash
    docker build -t meu-site-nginx .
    
+2. Subir os containers:
+Inicie o ambiente orquestrado em segundo plano com o comando:
+   ```bash
+   docker compose up -d
 
-2. Testar nos navegadores:
+4. Testar nos navegadores:
 
 * Site estático: http://localhost:8080.
 * App Whoami: http://localhost:8081.
 
-3. Explorar comandos extras:
+4. Explorar comandos extras:
 
 * Ver containers ativos: 
    ```bash
@@ -53,7 +57,7 @@ Para parar e remover os containers, redes e volumes:
    docker compose down
 
 ## 👨‍💻 Autores
-Guilherme da Silva Bispo
-Adilson de Sousa Santos
+- Guilherme da Silva Bispo
+- Adilson de Sousa Santos
 
 Sistemas de Informação
